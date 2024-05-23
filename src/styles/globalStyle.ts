@@ -25,4 +25,20 @@ export const styles = StyleSheet.create({
         marginBottom:16 , 
      } , 
 
+
+     viewIconedit:{
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'rgba(0,0,0,0.4)',
+        marginBottom:12
+      } , 
+      headeraddnewTask :{
+        alignItems:'center' , 
+        justifyContent:'center' , 
+        padding:20
+      }
+
 })

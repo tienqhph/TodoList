@@ -9,10 +9,11 @@ interface Props {
   bgColor?: string;
   icon?: string;
   borderRadius?: number;
-  style?: StyleProp<ViewStyle>;
+  style?: StyleProp<ViewStyle>; 
+   font?:string
 }
 const ButtonComponent = (props: Props) => {
-  const {onPress, title, bgColor, borderRadius, icon, style} = props;
+  const {onPress, title, bgColor, borderRadius, icon, style , font} = props;
   return (
     <TouchableOpacity
       style={[
@@ -25,7 +26,7 @@ const ButtonComponent = (props: Props) => {
         style,
       ]}
       onPress={() => onPress()}>
-      <TextComponent text={title} />
+      <TextComponent text={title} font={font} />
     </TouchableOpacity>
   );
 };
